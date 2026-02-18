@@ -86,6 +86,21 @@ INTO TABLE credit_card
 FIELDS TERMINATED BY ','
 IGNORE 1 ROWS;
 
+## Step 2: SQL Analysis
+
+Performed:
+- Data validation  
+- Record count verification  
+- Basic SQL queries for analysis  
+
+### Example Queries
+
+```sql
+SELECT COUNT(*) FROM credit_card;
+
+SELECT card_category, SUM(revenue)
+FROM credit_card
+GROUP BY card_category;
 
 
 
