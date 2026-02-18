@@ -146,7 +146,7 @@ Transaction Count = COUNT(credit_card[Client_Num])
 
 ---
 
-##Step 7: Dashboard Design
+## Step 7: Dashboard Design
 
 **Created:**
 
@@ -193,8 +193,8 @@ Transaction Count = COUNT(credit_card[Client_Num])
 
 ## 👨‍💻 Author
 
-**Yoginder Kumar
-Aspiring Data Analyst**
+**Yoginder Kumar**
+**Aspiring Data Analyst**
 
 ### Skills:
 
