@@ -80,7 +80,7 @@ Dataset includes:
 
 Imported dataset into MySQL using:
 
-```sql
+sql
 LOAD DATA LOCAL INFILE 'credit_card.csv'
 INTO TABLE credit_card
 FIELDS TERMINATED BY ','
@@ -93,14 +93,120 @@ Performed:
 - Record count verification  
 - Basic SQL queries for analysis  
 
-### Example Queries
+### Queries
 
-```sql
+sql
 SELECT COUNT(*) FROM credit_card;
 
 SELECT card_category, SUM(revenue)
 FROM credit_card
 GROUP BY card_category;
+
+## Step 3: Connecting SQL to Power BI
+
+**Steps:**
+
+- Open Power BI Desktop  
+- Click Get Data  
+- Select MySQL Database  
+- Enter server and database name  
+- Load tables into Power BI  
+
+---
+
+## Step 4: Data Cleaning (Power Query)
+
+**Performed:**
+
+- Changed data types  
+- Removed null values  
+- Renamed columns  
+- Verified duplicates  
+
+---
+
+## Step 5: Data Modeling
+
+Created relationships between tables and ensured:
+
+- One-to-many relationships  
+- Proper filtering direction  
+
+## Step 6: Creating DAX Measures
+
+### Total Revenue
+DAX
+Total Revenue = SUM(credit_card[Revenue]) 
+
+###Total Interest
+Total Interest = SUM(credit_card[Interest_Earned])
+
+###Transaction Count
+Transaction Count = COUNT(credit_card[Client_Num])
+
+---
+
+##Step 7: Dashboard Design
+
+**Created:**
+
+- KPI Cards
+- Bar Charts
+- Line Charts
+- Tables
+- Slicers (Quarter, Gender, Card Type, Income Group)
+
+**Focused on:**
+- Clean layout
+- Consistent colors
+- Interactive filters
+
+## 📈 Key Insights
+
+- Blue card customers generate the highest revenue
+- Business professionals are top contributors
+- Middle-aged customers spend the most
+- Swipe transactions dominate over online payments
+- Bills and entertainment are top spending categories
+- High-income customers contribute the highest revenue
+
+## 🚀 Business Recommendations
+- Promote premium card upgrades
+- Increase digital transaction incentives
+- Target high-value customer segments
+- Improve customer satisfaction initiatives
+
+## 📚 Learning Outcomes
+#### Through this project, I learned:
+
+- SQL data handling and queries
+- Connecting SQL to Power BI
+- Data cleaning using Power Query
+- Writing DAX measures
+- Dashboard storytelling
+- Business insight generation
+
+## 📷 Dashboard Screenshots
+
+![Transaction Dashboard](transaction_dashboard.png)
+![Customer Dashboard](customer_dashboard.png)
+
+## 👨‍💻 Author
+
+**Yoginder Kumar
+Aspiring Data Analyst**
+
+### Skills:
+
+- Power BI
+- SQL
+- Python
+- Excel
+
+## ⭐ Support
+
+**If you like this project, give it a ⭐ on GitHub!**
+
 
 
 
