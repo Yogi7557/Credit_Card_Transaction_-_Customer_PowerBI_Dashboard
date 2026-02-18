@@ -1,0 +1,39 @@
+CREDIT CARD DASHBOARD
+Project Objectives and Insights
+--------------------------------------------------
+
+PROJECT OBJECTIVE
+To develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
+
+--------------------------------------------------
+
+EXECUTIVE INSIGHTS – CREDIT CARD ANALYSIS DASHBOARD
+
+• Total Revenue: 55.3M with 7.8M interest and 655K transactions, showing strong usage.
+• Blue card segment generates the highest revenue, indicating most customers are in entry-level tiers.
+• Swipe transactions dominate, while online transactions are comparatively low.
+• Age group 40–50 and business professionals contribute the most revenue, making them key customer segments.
+• Major spending categories include Bills, Entertainment, Fuel, and Grocery, showing focus on essential expenses.
+• High-income and graduate customers generate higher revenue.
+• Revenue is concentrated in a few top-performing states, suggesting opportunities to expand in other regions.
+• Customer satisfaction is moderate, indicating scope for improvement through better rewards and services.
+
+--------------------------------------------------
+
+CONCLUSION
+
+The business is performing well, with strong transaction volume and revenue, but growth can be achieved by:
+• Promoting premium cards
+• Increasing digital payments
+• Targeting high-value customer segments
+
+--------------------------------------------------
+
+Author: Yoginder Kumar
+Aspiring Data Analyst
+
+Skills:
+Power BI
+SQL
+Python
+Excel
