@@ -231,9 +231,13 @@ ALL('public cc_detail'),
 
 ## 📷 Dashboard Screenshots
 
-[![Transaction Dashboard](transaction_dashboard.png)](https://github.com/Yogi7557/Credit_Card_Transaction_-_Customer_PowerBI_Dashboard/blob/main/Credit_Card_Transaction_PowerBI_Dashboard.pdf)
-![Customer Dashboard](customer_dashboard.png)](https://github.com/Yogi7557/Credit_Card_Transaction_-_Customer_PowerBI_Dashboard/blob/main/Credit_Card_Customer_PowerBI_DashBoard.pdf)
+### Credit Card Customer Dashboard
+[View Customer Dashboard (PDF)](https://github.com/Yogi7557/Credit_Card_Transaction_-_Customer_PowerBI_Dashboard/blob/main/Credit_Card_Customer_PowerBI_DashBoard.pdf)
 
+### Credit Card Transaction Dashboard
+[View Transaction Dashboard (PDF)](https://github.com/Yogi7557/Credit_Card_Transaction_-_Customer_PowerBI_Dashboard/blob/main/Credit_Card_Transaction_PowerBI_Dashboard.pdf)
+
+---
 
 ## 👨‍💻 Author
 
