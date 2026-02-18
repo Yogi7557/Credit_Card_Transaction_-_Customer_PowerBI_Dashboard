@@ -136,21 +136,57 @@ Created relationships between tables and ensured:
 
 ## Step 6: Creating DAX Measures
 
-### Total Revenue
+### Age Group
 ~~~DAX
-Total Revenue = SUM(credit_card[Revenue])
+AgeGroup = SWITCH(
+TRUE(),
+'public cust_detail'[customer_age] < 30, "20-30",
+'public cust_detail'[customer_age] >= 30 && 'public cust_detail'[customer_age] < 40, "30-40",
+'public cust_detail'[customer_age] >= 40 && 'public cust_detail'[customer_age] < 50, "40-50",
+'public cust_detail'[customer_age] >= 50 && 'public cust_detail'[customer_age] < 60, "50-60",
+'public cust_detail'[customer_age] >= 60, "60+",
+"unknown"
+)
 ~~~ 
 
-###Total Interest
+### Income_Group
 ~~~DAX
-Total Interest = SUM(credit_card[Interest_Earned])
+IncomeGroup = SWITCH(
+TRUE(),
+'public cust_detail'[income] < 35000, "Low",
+'public cust_detail'[income] >= 35000 && 'public cust_detail'[income] <70000, "Med",
+'public cust_detail'[income] >= 70000, "High",
+"unknown"
+)
 ~~~
 
-###Transaction Count
+### Weeknum2
 ~~~Dax
-Transaction Count = COUNT(credit_card[Client_Num])
+week_num2 = WEEKNUM('public cc_detail'[week_start_date]
 ~~~
 
+### Revenue
+~~~Dax
+Revenue = 'public cc_detail'[annual_fees] + 'public cc_detail'[total_trans_amt] + 'public cc_detail'[interest_earned]
+~~~
+
+### Current_Week_Reveneue
+~~~Dax
+Current_week_Reveneue = CALCULATE(
+SUM('public cc_detail'[Revenue]),
+FILTER(
+ALL('public cc_detail'),
+'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2]))) 
+~~~
+
+###  Previous_week_Reveneue
+~~~Dax
+Previous_week_Reveneue = CALCULATE(
+SUM('public cc_detail'[Revenue]),
+FILTER(
+ALL('public cc_detail'),
+'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2])-1))
+~~~
 ---
 
 ## Step 7: Dashboard Design
