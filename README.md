@@ -86,17 +86,6 @@ INTO TABLE credit_card
 FIELDS TERMINATED BY ','
 IGNORE 1 ROWS;
 
-## Performed:
-
-- Data validation
-
-Record count verification
-
-Basic SQL queries for analysis
-
-queries:
-
-
 
 
 
