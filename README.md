@@ -237,8 +237,6 @@ ALL('public cc_detail'),
 ### Credit Card Transaction Dashboard
 [View Transaction Dashboard (PDF)](https://github.com/Yogi7557/Credit_Card_Transaction_-_Customer_PowerBI_Dashboard/blob/main/Credit_Card_Transaction_PowerBI_Dashboard.pdf)
 
----
-
 ## 👨‍💻 Author
 
 **Yoginder Kumar**
