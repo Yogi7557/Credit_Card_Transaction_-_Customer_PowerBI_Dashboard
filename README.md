@@ -80,11 +80,12 @@ Dataset includes:
 
 Imported dataset into MySQL using:
 
-sql
+~~~sql
 LOAD DATA LOCAL INFILE 'credit_card.csv'
 INTO TABLE credit_card
 FIELDS TERMINATED BY ','
 IGNORE 1 ROWS;
+~~~
 
 ## Step 2: SQL Analysis
 
@@ -95,12 +96,13 @@ Performed:
 
 ### Queries
 
-sql
+~~~sql
 SELECT COUNT(*) FROM credit_card;
 
 SELECT card_category, SUM(revenue)
 FROM credit_card
 GROUP BY card_category;
+~~~
 
 ## Step 3: Connecting SQL to Power BI
 
@@ -135,14 +137,19 @@ Created relationships between tables and ensured:
 ## Step 6: Creating DAX Measures
 
 ### Total Revenue
-DAX
-Total Revenue = SUM(credit_card[Revenue]) 
+~~~DAX
+Total Revenue = SUM(credit_card[Revenue])
+~~~ 
 
 ###Total Interest
+~~~DAX
 Total Interest = SUM(credit_card[Interest_Earned])
+~~~
 
 ###Transaction Count
+~~~Dax
 Transaction Count = COUNT(credit_card[Client_Num])
+~~~
 
 ---
 
